@@ -1,4 +1,80 @@
-.form-input {
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+:root {
+    /* primary colors */
+    --cool-blue : rgb(23, 60, 182);
+    --dark-blue: rgb(7, 7, 70);
+    --icy-white : rgb(213, 215, 247);
+    --neutral-grey: rgb(92, 91, 91);
+    --nice-blue: rgb(110, 202, 238);
+
+    /* font styling */
+    font-family: Koulen, sans-serif;
+}
+
+* {
+    font-size: large;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 0px;
+}
+
+
+form {
     display: flex;
-    width: 80%;
+    flex-direction: column;
+    padding: 18px;
+    height: 30vh;
+    background-color: var(--nice-blue);
+    border: 2pt solid var(--dark-blue);
+    border-radius: 4px;
+}
+.form-input {
+    /* padding-bottom: 12px; */
+    text-align: center;
+    border-radius: 7px;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius: 0px; 
+    height: 90%;
+}
+
+#text-button {
+    padding: 12px 0px;
+    background-color: var(--cool-blue);
+    color: var(--icy-white);
+    font-size: large;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#text-button:hover,
+#text-button:focus {
+    transition: ease-in;
+    transition-duration: 200ms;
+    background-color: var(--icy-white);
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+#text-button:active {
+    background-color: var(--neutral-grey);
+    color: var(--icy-white);
+}
+
+.prompt-head {
+    margin: 2px;
+}
+
+.prompt {
+    height: 30vh;
+    border: 1pt solid var(--dark-blue);
+    overflow-y: auto;
 }
