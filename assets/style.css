@@ -8,11 +8,19 @@
     --neutral-grey: rgb(92, 91, 91);
     --nice-blue: rgb(110, 202, 238);
 
+    --background-blue: rgb(125, 125, 190);
+
     /* font styling */
     font-family: Koulen, sans-serif;
 }
 
+body {
+    height: 100vh;
+}
+
 * {
+    margin: 0;
+    padding: 0 ;
     font-size: large;
     text-align: center;
 }
@@ -28,17 +36,18 @@ h2 {
 }
 
 
+
+
 form {
     display: flex;
     flex-direction: column;
     padding: 18px;
-    height: 30vh;
+    height: 20vh;
     background-color: var(--nice-blue);
     border: 2pt solid var(--dark-blue);
     border-radius: 4px;
 }
 .form-input {
-    /* padding-bottom: 12px; */
     text-align: center;
     border-radius: 7px;
     border-bottom-left-radius : 0px;
@@ -70,11 +79,81 @@ form {
 }
 
 .prompt-head {
-    margin: 2px;
+    padding: 2px;
 }
 
-.prompt {
-    height: 30vh;
+.results {
+    /* height: 100vh; */
+}
+
+#prompt-area {
+    padding: auto;
+    height: 40vh;
     border: 1pt solid var(--dark-blue);
-    overflow-y: auto;
+    overflow: scroll;
+    display: block;
+    /* -webkit-transform: rotate(-180deg);
+    trans; */
+    
+}
+
+.rb-header {
+    display: flex;
+    width: 30%;
+    background-color: var(--nice-blue);
+    border: 1pt solid var(--dark-blue);
+    justify-content: center;
+    padding: 4px;
+    align-items: center;
+}
+
+.rb-resp {
+    display: flex;
+    border: 1pt solid var(--dark-blue);
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    flex-grow: 1;
+}
+
+/* .rb-resp-1 {
+    display: flex;
+    border: 1pt solid var(--dark-blue);
+    background-color: white;
+    justify-content: center;
+    overflow-y: scroll;
+    flex-grow: 1;
+} */
+
+section {
+    display: flex;
+    height: 100%;
+}
+
+section div {
+    /* height: 50%; */
+}
+
+.response-box {
+    border: 1pt solid blue;
+    background-color: var(--background-blue);
+    display: flex;
+    margin: 17px 10px ;
+    padding: 10px 0px;
+    flex-direction: column;
+}
+
+.response-box section {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding: 8px 0px ;
+}
+
+.response-box li {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding: 8px 0px ;
 }
