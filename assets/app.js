@@ -6,7 +6,6 @@ const formInput = document.querySelector('.form-input');
 
 // apiKey
 const apiKey = process.env.OPENAI_API_KEY;
-// "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";
 
 function buttonHandler(e) {
     e.preventDefault();
